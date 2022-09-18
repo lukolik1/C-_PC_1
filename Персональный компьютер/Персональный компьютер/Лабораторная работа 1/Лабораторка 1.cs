@@ -50,17 +50,17 @@ namespace Персональный_компьютер.Лабораторная_�
                 double x1, y1, x2, y2, x3, y3;
                 double A, C, B, P, P1, S;
 
-                Console.Write("Первые кординаты:");
+                Console.WriteLine("Первые кординаты (x1,y1):");
                 x1 = Convert.ToInt32(Console.ReadLine());
                 y1 = Convert.ToInt32(Console.ReadLine());
 
 
-                Console.Write("Вторые кординаты:");
+                Console.WriteLine("Вторые кординаты (x2, y2):");
                 x2 = Convert.ToInt32(Console.ReadLine());
                 y2 = Convert.ToInt32(Console.ReadLine());
 
 
-                Console.Write("Третие кординаты:");
+                Console.WriteLine("Третие кординаты (x3, y3):");
                 x3 = Convert.ToInt32(Console.ReadLine());
                 y3 = Convert.ToInt32(Console.ReadLine());
 
@@ -78,8 +78,8 @@ namespace Персональный_компьютер.Лабораторная_�
 
                 Console.Clear();
 
-                Console.Write("Площадь:\t {0}", S);
-                Console.Write("Перемитр:\t {0}", P);
+                Console.WriteLine("Площадь:\t {0}", S);
+                Console.WriteLine("Перемитр:\t {0}", P);
 
             }
             catch (Exception)
@@ -106,8 +106,8 @@ namespace Персональный_компьютер.Лабораторная_�
                 S = pi * R * R;
 
 
-                Console.WriteLine("Площадь произвольного теугольника:{0}\t", S);
-                Console.WriteLine("Перемитр произвольного теугольника:{0}\t", P);
+                Console.WriteLine("Площадь произвольного треугольника:{0}\t\t", S);
+                Console.WriteLine("Периметр произвольного треугольника:{0}\t\t", P);
 
             }
             catch (Exception)
@@ -130,8 +130,8 @@ namespace Персональный_компьютер.Лабораторная_�
                 Console.WriteLine("Введите второе число:");
                 y = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Средние арифметическая:{0} \t", (x + y) / 2);
-                Console.Write("Средние геометрическое:{0} \t", Math.Sqrt(x * y));
+                Console.WriteLine("Средние арифметическая:{0} \t ", (x + y) / 2);
+                Console.WriteLine("Средние геометрическое:{0} \t ", Math.Sqrt(x * y));
 
             }
             catch (Exception)
@@ -218,12 +218,12 @@ namespace Персональный_компьютер.Лабораторная_�
                 Console.Write("Введите ребро куба:");
                 int a = Convert.ToInt32(Console.ReadLine());
 
-                int S = a * a;
-                int S_point = 6 * S;
-                int V = a * a * a;
-                Console.Write("Площадь грани\t{0}:", S);
-                Console.Write("Площадь полной поверзности\t{0}:", S_point);
-                Console.Write("Обьём\t{0}:", V);
+                double S = a * a;
+                double S_point = 6 * S;
+                double V = a * a * a;
+                Console.WriteLine("Площадь грани\t{0}:", S);
+                Console.WriteLine("Площадь полной поверхности:\t{0}", S_point);
+                Console.WriteLine("Обьём\t{0}:", V);
 
             }
             catch (Exception)
@@ -271,11 +271,11 @@ namespace Персональный_компьютер.Лабораторная_�
             try
             {
                 const double pi = 3.1415926535;
-                int S;
-                Console.Write("Введите первое число:");
-                int R = Convert.ToInt32(Console.ReadLine());
+                double S;
+                Console.Write("Радиус:");
+                double R = Convert.ToInt32(Console.ReadLine());
                 S = Convert.ToInt32(pi * R * R);
-                Console.Write("Введите первое число: {0}", S);
+                Console.WriteLine("Площадь:\t {0}", S);
             }
             catch (Exception)
             {
@@ -299,13 +299,13 @@ namespace Персональный_компьютер.Лабораторная_�
                 Console.Write("Введите второе число:");
                 double b = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Введите второе число:");
+                Console.Write("Введите третие число:");
                 double alpha = Convert.ToInt32(Console.ReadLine());
 
                 double S;
-                alpha = (alpha * pi) / 180;
-                S = (1 / 2) * (Math.Sqrt(b) - Math.Sqrt(a)) * Math.Tan(alpha);
-                Console.Write("Введите первое число: {0}", S);
+                alpha = (alpha * pi) / 180.0;
+                S = (1.0 / 2.0) * (Math.Sqrt(b) - Math.Sqrt(a)) * Math.Tan(alpha);
+                Console.WriteLine("Площадь: {0}\t", S);
             }
             catch (Exception)
             {
@@ -316,7 +316,7 @@ namespace Персональный_компьютер.Лабораторная_�
         }
 
 
-        static public void Triangle3_11()
+        static public void Triangle5_11()
         {
             try
             {
@@ -360,20 +360,20 @@ namespace Персональный_компьютер.Лабораторная_�
             {
 
                 Console.Write("Введите первое сопротивление:");
-                int R1 = Convert.ToInt32(Console.ReadLine());
+                double R1 = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Введите второе сопротивление:");
-                int R2 = Convert.ToInt32(Console.ReadLine());
+                double R2 = Convert.ToInt32(Console.ReadLine());
 
 
                 Console.Write("Введите третие сопротивление:");
-                int R3 = Convert.ToInt32(Console.ReadLine());
+                double R3 = Convert.ToInt32(Console.ReadLine());
 
-                int R;
+                double R;
 
                 R = (R1 * R2 * R3) / ((R1 * R2) + (R2 * R3) + (R3 * R1));
 
-                Console.Write("Сопротивление соединение:{0}\t", R);
+                Console.WriteLine("Сопротивление соединение:{0}\t", R);
             }
             catch (Exception)
             {
@@ -400,14 +400,14 @@ namespace Персональный_компьютер.Лабораторная_�
                 if(R == H)
                 {
                     Vcilcnder = pi * Math.Sqrt(R) * H;
-                    Vconus = (1 / 3) * pi * Math.Sqrt(R) * H;
-                    Console.Write("Обьём конуса:\t {0}", Vconus);
-                    Console.Write("Обьём цилиндра:\t {0}", Vcilcnder);
+                    Vconus = (1.0 / 3.0) * pi * Math.Sqrt(R) * H;
+                    Console.WriteLine("Обьём конуса:\t {0}", Vconus);
+                    Console.WriteLine("Обьём цилиндра:\t {0}", Vcilcnder);
 
                 }
                 else
                 {
-                    Console.Write("Введите одинакую высоту и радиус !");
+                    Console.WriteLine("Введите одинакую высоту и радиус !");
                 }
 
 
@@ -426,17 +426,17 @@ namespace Персональный_компьютер.Лабораторная_�
             {
                 double C, C1;
 
-                Console.Write("Введите первое сопротивление:");
-                int A = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Введите первое число:");
+                double A = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Введите первое сопротивление:");
-                int B = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Введите первое число:");
+                double B = Convert.ToInt32(Console.ReadLine());
 
-                 C = (A * A) + (B * B) / 2;
+                 C = (A * A) + (B * B) / 2.0;
                  C1 = Math.Sqrt(Math.Abs(A) * Math.Abs(B));
 
-                Console.Write("Средние арифметическое:\t {0}", C);
-                Console.Write("Средние геометрическое:\t {0}", C1);
+                Console.WriteLine("Средние арифметическое:\t {0}", C);
+                Console.WriteLine("Средние геометрическое:\t {0}", C1);
 
 
 
@@ -454,12 +454,12 @@ namespace Персональный_компьютер.Лабораторная_�
 
                 const double g = 9.8;
 
-                Console.Write("Введите первое сопротивление:");
+                Console.Write("Введите высоту:");
                 double h = Convert.ToInt32(Console.ReadLine());
 
-                double t = Math.Sqrt(2 * h / g);
+                double t = Math.Sqrt(2.0 * h / g);
 
-                Console.Write("Время падения:\t {0}", t);
+                Console.WriteLine("Время падения:\t {0}", t);
 
             }
             catch (Exception)
@@ -480,9 +480,9 @@ namespace Персональный_компьютер.Лабораторная_�
                 Console.Write("Введите сторону:");
                 double a = Convert.ToInt32(Console.ReadLine());
 
-                double S = (Math.Sqrt(3)/4)* Math.Sqrt(a) ;
+                double S = (Math.Sqrt(3.0)/4.0)* Math.Sqrt(a) ;
 
-                Console.Write("Площадь:\t {0}", S);
+                Console.WriteLine("Площадь:\t {0}", S);
 
 
             }
@@ -512,7 +512,7 @@ namespace Персональный_компьютер.Лабораторная_�
 
                 double F = G * (m1 * m2 / R * R);
 
-                Console.Write("Сила придяжения {0}\t:", F);
+                Console.WriteLine("Сила придяжения {0}\t:", F);
 
             }
             catch (Exception)
@@ -527,18 +527,18 @@ namespace Персональный_компьютер.Лабораторная_�
             try
             {
                 Console.Write("Введите  первый член:");
-                int a1 = Convert.ToInt32(Console.ReadLine());
+                double a1 = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Введите разность:");
-                int d = Convert.ToInt32(Console.ReadLine());
+                double d = Convert.ToInt32(Console.ReadLine());
 
                 Console.Write("Введите число членов прогресси:");
-                int n = Convert.ToInt32(Console.ReadLine());
+                double n = Convert.ToInt32(Console.ReadLine());
 
 
-                int S = (2 * a1 + d * (n - 1)/2) * n;
+                double S = (2.0 * a1 + d * (n - 1.0)/2.0) * n;
 
-                Console.Write("Прогрессия {0}\t:", S);
+                Console.WriteLine("Прогрессия {0}\t:", S);
             }
             catch (Exception)
             {
@@ -560,16 +560,16 @@ namespace Персональный_компьютер.Лабораторная_�
                 if (a > b)
                 {
                     a = (b - a) * 365;
-                    Console.Write("Примерно вы столько прожили дней {0}\t:", a);
+                    Console.WriteLine("Примерно вы столько прожили дней {0}\t:", a);
 
                 } else if (a > b)
                 {
-                    Console.Write("Не правильно указаны год рождения и текущий год");
+                    Console.WriteLine("Не правильно указаны год рождения и текущий год");
                 }
                 else
                 {
                     a = a * 365;
-                    Console.Write("Примерно вы столько прожили дней {0}\t:", a);
+                    Console.WriteLine("Примерно вы столько прожили дней {0}\t:", a);
                 }
 
 
@@ -601,32 +601,32 @@ namespace Персональный_компьютер.Лабораторная_�
 
                 switch (month)
                 {
-                    case "Январь": A = P * 31;  S = A * T; Console.Write("Стоимость: {0}\n", S);  break;
-                    case "Февраль": A = P * 28; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Март": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Апрель": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Май": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Июнь": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Июль": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Август": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Сентябрь": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Октябрь": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Ноябрь": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "Декабрь": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
+                    case "Январь": A = P * 31.0;  S = A * T; Console.WriteLine("Стоимость: {0}\t", S);  break;
+                    case "Февраль": A = P * 28.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Март": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Апрель": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Май": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Июнь": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Июль": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Август": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Сентябрь": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Октябрь": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Ноябрь": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "Декабрь": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
 
 
-                    case "январь": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "февраль": A = P * 28; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "март": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "апрель": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "май": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "июнь": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "июль": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "август": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "сентябрь": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "октябрь": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "ноябрь": A = P * 30; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
-                    case "декабрь": A = P * 31; S = A * T; Console.Write("Стоимость: {0}\n", S); break;
+                    case "январь": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "февраль": A = P * 28.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "март": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "апрель": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "май": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "июнь": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "июль": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "август": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "сентябрь": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "октябрь": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "ноябрь": A = P * 30.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
+                    case "декабрь": A = P * 31.0; S = A * T; Console.WriteLine("Стоимость: {0}\t", S); break;
                 }
 
 
