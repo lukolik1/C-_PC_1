@@ -1,0 +1,19 @@
+D:\Персональный компьютер\WpfApp1\bin\Debug\WpfApp1.exe.config
+D:\Персональный компьютер\WpfApp1\bin\Debug\WpfApp1.exe
+D:\Персональный компьютер\WpfApp1\bin\Debug\WpfApp1.pdb
+D:\Персональный компьютер\WpfApp1\bin\Debug\Персональный компьютер.exe
+D:\Персональный компьютер\WpfApp1\bin\Debug\Персональный компьютер.pdb
+D:\Персональный компьютер\WpfApp1\bin\Debug\Персональный компьютер.exe.config
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+D:\Персональный компьютер\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\Персональный компьютер\WpfApp1\obj\Debug\App.g.cs
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+D:\Персональный компьютер\WpfApp1\obj\Debug\MainWindow.baml
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.g.resources
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.csproj.GenerateResource.cache
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.exe
+D:\Персональный компьютер\WpfApp1\obj\Debug\WpfApp1.pdb

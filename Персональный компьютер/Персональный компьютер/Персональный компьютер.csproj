@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.2</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,9 +47,18 @@
   <ItemGroup>
     <Compile Include="Hellp\hellp.cs" />
     <Compile Include="PC.cs" />
+    <Compile Include="Pixel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shiek.cs" />
     <Compile Include="Лабораторная работа 1\Лабораторка 1.cs" />
+    <Compile Include="Лабораторная работа 2\Лаборадорная работа 2.cs" />
+    <Compile Include="Лабораторная работа 3\Лабораторная работа 3.cs" />
+    <Compile Include="Лабораторная работа 4\Лабораторная работа 4.cs" />
+    <Compile Include="Лабораторная работа 5\Лабораторная работа 5.cs" />
+    <Compile Include="Лабораторная работа 6\Лабораторная работа 6.cs" />
+    <Compile Include="Лабораторная работа Артём\Артём.cs" />
+    <Compile Include="Лабораторная работа Вова\Лабораторная работа4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

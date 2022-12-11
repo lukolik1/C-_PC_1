@@ -158,9 +158,9 @@ namespace Персональный_компьютер.Лабораторная_�
 
 
         }
-       
 
-       
+        
+
 
 
         static public void Calculation_6()
@@ -176,12 +176,12 @@ namespace Персональный_компьютер.Лабораторная_�
                 Console.Write("Введите второе число:");
                 double y = Convert.ToInt32(Console.ReadLine());
 
-                Console.Clear();
+                
 
 
 
 
-                Console.Write("Введите операцию:");
+                Console.Write("Введите операцию (*,+,-,/,%,^,Sqrt):");
                 string operation = Console.ReadLine();
 
                 switch (operation)
@@ -199,7 +199,16 @@ namespace Персональный_компьютер.Лабораторная_�
                             Console.WriteLine("Деление:{0}", (x / y)); break;
                         }
                     case "-": Console.WriteLine("Разность:{0}", (x - y)); break;
-                    case "^": for (int i = 0; i < y; i++) {  result *=  x;  }; Console.WriteLine("Возветение в степень:{0}", result ); break;
+                    case "^":
+                        for (int i = 0; i < y; i++)
+                        {
+                            result *=  x;
+
+                        };
+                        Console.WriteLine("Возветение в степень:{0}", result ); break;
+                    case "%": Console.WriteLine("остаток от деления:{0}", (x % y)); break;
+                    case "Sqrt": Console.WriteLine("Корень :{0}", Math.Sqrt(x)); Console.WriteLine("Корень :{0}", Math.Sqrt(y)); break;
+
                 }
 
             }
@@ -221,6 +230,8 @@ namespace Персональный_компьютер.Лабораторная_�
                 double S = a * a;
                 double S_point = 6 * S;
                 double V = a * a * a;
+
+
                 Console.WriteLine("Площадь грани\t{0}:", S);
                 Console.WriteLine("Площадь полной поверхности:\t{0}", S_point);
                 Console.WriteLine("Обьём\t{0}:", V);
@@ -239,7 +250,7 @@ namespace Персональный_компьютер.Лабораторная_�
             {
                 double S, h, R, r;
 
-                Console.Write("Введите первое число:");
+                Console.Write("Введите сторону:");
                 double a = Convert.ToInt32(Console.ReadLine());
 
 
@@ -336,7 +347,7 @@ namespace Персональный_компьютер.Лабораторная_�
                     Console.WriteLine("Площадь:\t {0}", 1.0 / 2.0 * a * b * Math.Sin(j));
                 
                 else
-                    Console.WriteLine("Некоретный ввод !");
+                    Console.WriteLine("Переменные не равны!");
 
 
 
@@ -562,7 +573,7 @@ namespace Персональный_компьютер.Лабораторная_�
                     a = (b - a) * 365;
                     Console.WriteLine("Примерно вы столько прожили дней {0}\t:", a);
 
-                } else if (a > b)
+                } else if (!(a > b))
                 {
                     Console.WriteLine("Не правильно указаны год рождения и текущий год");
                 }
